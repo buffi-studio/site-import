@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Alessandro Buffi Architect</title>
+<meta name="description" content="Privacy policy of alessandrobuffi.com — how personal data submitted through the contact form is processed.">
+<meta name="robots" content="noindex, follow">
+<link href="https://fonts.bunny.net/css?family=marcellus:400|eb-garamond:400,400i,700,700i|inter:300,400,500&display=swap" rel="stylesheet">
+<style>:root{
+  --paper:#EFEAE0;
+  --paper-2:#E6DFD2;
+  --stone:#8A7E6C;
+  --olive:#575E48;
+  --steel:#28241F;
+  --ink:#1D1A15;
+  --hair:rgba(29,26,21,.22);
+  --hair-light:rgba(239,234,224,.35);
+  --max:1240px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:'Inter',sans-serif;font-weight:300;font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased}
+img{display:block;width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:'Marcellus',serif;font-weight:400;text-transform:uppercase}
+::selection{background:var(--olive);color:var(--paper)}
+
+/* logotype */
+.wordmark{font-family:'EB Garamond',serif;white-space:nowrap;line-height:1;letter-spacing:.005em}
+.wordmark .bk{font-style:italic;font-weight:700;font-size:1.28em;position:relative;top:.04em}
+.wordmark .bk.l{margin-right:.28em}
+.wordmark .bk.r{margin-left:.28em}
+.tagline{font-family:'EB Garamond',serif;font-size:.36em;letter-spacing:.34em;text-transform:uppercase;display:block;text-align:center;margin-top:.5em}
+
+/* header */
+header{position:fixed;inset:0 0 auto 0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:22px 4vw;transition:background .4s,padding .4s,color .4s;color:var(--paper)}
+header.scrolled{background:rgba(239,234,224,.94);color:var(--ink);padding:14px 4vw;backdrop-filter:blur(8px);border-bottom:1px solid var(--hair)}
+header.dark-start{color:var(--ink)}
+header .wordmark{font-size:1.3rem}
+nav{display:flex;gap:2.2vw}
+nav a{font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;opacity:.85;transition:opacity .3s}
+nav a:hover{opacity:1}
+nav a.active{opacity:1;border-bottom:1px solid currentColor;padding-bottom:2px}
+.burger{display:none}
+
+/* hero */
+.hero{position:relative;height:100svh;min-height:560px;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(29,26,21,.55) 0%,rgba(29,26,21,.08) 45%,rgba(29,26,21,.25) 100%)}
+.hero-inner{position:absolute;z-index:2;inset:auto 4vw 9vh 4vw;color:var(--paper)}
+.hero-eyebrow{font-size:.68rem;letter-spacing:.34em;text-transform:uppercase;opacity:.85;margin-bottom:1.4rem}
+.hero h1{font-size:clamp(2.4rem,6.2vw,5.4rem);letter-spacing:.08em;line-height:1.08}
+.hero p{max-width:30em;margin-top:1.6rem;font-size:1rem;line-height:1.9;opacity:.93}
+.hero-alt{position:absolute;z-index:2;right:4vw;bottom:9vh;color:var(--paper);font-size:.66rem;letter-spacing:.3em;text-transform:uppercase;writing-mode:vertical-rl;opacity:.7;display:flex;align-items:center;gap:12px}
+.hero-alt::after{content:"";width:1px;height:64px;background:var(--paper);opacity:.6}
+
+/* elevation dividers + commons */
+.elev{display:flex;align-items:center;gap:22px;max-width:var(--max);margin:0 auto;padding:0 4vw;font-size:.66rem;letter-spacing:.34em;text-transform:uppercase;color:var(--stone)}
+.elev::before,.elev::after{content:"";flex:1;height:1px;background:var(--hair)}
+.elev span b{font-weight:400;color:var(--ink)}
+section{padding:110px 0}
+.kicker{font-size:.66rem;letter-spacing:.34em;text-transform:uppercase;color:var(--olive);margin-bottom:1.6rem;display:block}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 4vw}
+
+/* figures */
+.full{max-width:1500px;margin:0 auto}
+figure{margin:0}
+figcaption{font-size:.72rem;letter-spacing:.14em;color:#6E6455;padding:14px 4vw 0;text-transform:uppercase}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--olive);outline-offset:3px}
+.full figcaption{max-width:var(--max);margin:0 auto}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:4vw;max-width:var(--max);margin:9vh auto;padding:0 4vw;align-items:start}
+.duo figcaption{padding:14px 0 0}
+.duo .off{margin-top:9vh}
+.gap{margin:9vh auto}
+.datastrip{max-width:var(--max);margin:80px auto 0;padding:34px 4vw 0;border-top:1px solid var(--hair);display:grid;grid-template-columns:repeat(6,1fr);gap:24px}
+.datastrip div b{display:block;font-size:.62rem;letter-spacing:.28em;text-transform:uppercase;color:var(--stone);font-weight:400;margin-bottom:.5rem}
+.datastrip div{font-size:.85rem}
+
+/* contact */
+#contact{position:relative;color:var(--paper);padding:0}
+#contact .bg{position:absolute;inset:0;overflow:hidden}
+#contact .bg img{width:100%;height:100%;object-fit:cover}
+#contact .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(24,21,17,.78) 0%,rgba(24,21,17,.45) 55%,rgba(24,21,17,.82) 100%)}
+#contact .inner{position:relative;z-index:2;max-width:var(--max);margin:0 auto;padding:130px 4vw 90px}
+#contact .kicker{color:var(--paper);opacity:.7}
+#contact h2{font-size:clamp(1.9rem,4vw,3.1rem);letter-spacing:.1em;max-width:14em}
+#contact .lead{max-width:36em;margin-top:1.8rem;opacity:.9;font-size:.95rem}
+.cmail{display:inline-block;font-family:'Marcellus',serif;font-size:clamp(1.2rem,2.6vw,1.9rem);letter-spacing:.06em;margin-top:2.6rem;border-bottom:1px solid var(--hair-light);padding-bottom:.3rem}
+.cgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:34px;margin-top:70px;padding-top:40px;border-top:1px solid var(--hair-light)}
+.cgrid b{display:block;font-size:.62rem;letter-spacing:.28em;text-transform:uppercase;opacity:.65;font-weight:400;margin-bottom:.7rem}
+.cgrid div{font-size:.88rem;line-height:1.9}
+.cwordmark{margin:80px auto 0;text-align:center;font-size:2rem;opacity:.9}
+footer{position:relative;z-index:2;border-top:1px solid var(--hair-light);margin-top:60px}
+footer .inner{max-width:var(--max);margin:0 auto;padding:26px 4vw;display:flex;justify-content:space-between;gap:20px;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;opacity:.65;color:var(--paper)}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity 1s cubic-bezier(.2,.6,.2,1),transform 1s cubic-bezier(.2,.6,.2,1)}
+.rv.on{opacity:1;transform:none}
+
+/* CTA link */
+.cta{display:inline-block;font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;border-bottom:1px solid var(--ink);padding-bottom:6px;margin-top:3rem;transition:opacity .3s}
+.cta:hover{opacity:.6}
+
+/* mobile */
+@media(max-width:880px){
+  nav{display:none}
+  nav.open{display:flex;position:fixed;inset:0;background:var(--steel);color:var(--paper);flex-direction:column;justify-content:center;align-items:center;gap:34px}
+  nav.open a{font-size:.85rem}
+  .burger{display:block;background:none;border:none;color:inherit;font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;cursor:pointer;z-index:60;position:relative}
+  section{padding:80px 0}
+  .duo{grid-template-columns:1fr;gap:44px}
+  .duo .off{margin-top:0}
+  .datastrip{grid-template-columns:1fr 1fr;gap:28px}
+  .cgrid{grid-template-columns:1fr}
+  .hero-alt{display:none}
+  footer .inner{flex-direction:column;gap:8px}
+}
+</style>
+<style>
+.legal{max-width:760px;margin:0 auto;padding:170px 4vw 110px;color:#3d382f}
+.legal h1{font-size:clamp(1.8rem,3.6vw,2.6rem);letter-spacing:.1em;color:var(--ink)}
+.legal h2{font-size:1rem;letter-spacing:.18em;color:var(--ink);margin:2.6rem 0 .8rem}
+.legal p{margin-bottom:1rem;font-size:.92rem}
+.legal ul{margin:0 0 1rem 1.2rem;font-size:.92rem}
+.legal li{margin-bottom:.4rem}
+.legal .updated{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:#6E6455;margin-top:1rem}
+.endfoot{background:var(--steel);color:var(--paper)}
+.endfoot .inner{max-width:var(--max);margin:0 auto;padding:26px 4vw;display:flex;justify-content:space-between;gap:20px;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;opacity:.75}
+@media(max-width:880px){.endfoot .inner{flex-direction:column;gap:8px}}
+</style>
+</head>
+<body>
+
+<header id="hd" class="scrolled">
+  <a class="wordmark" href="index.html"><span class="bk l">[</span>Alessandro Buffi<span class="bk r">]</span></a>
+  <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">Menu</button>
+  <nav id="nav">
+    <a href="index.html#work">Built Work</a>
+    <a href="index.html#approach">Approach</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<div class="legal">
+  <span class="kicker">Privacy</span>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: July 2026</p>
+
+  <h2>1. Data Controller</h2>
+  <p>Alessandro Buffi — Alessandro Buffi Architect, Strada Bellocchio San Faustino 54, 06126 Perugia (Italy), VAT IT 03749400549, email <a href="mailto:info@alessandrobuffi.com" style="border-bottom:1px solid var(--hair)">info@alessandrobuffi.com</a> (the "Controller").</p>
+
+  <h2>2. What data we collect</h2>
+  <p>This website does not use cookies, advertising trackers or profiling tools. The only personal data we collect is what you choose to send us through the contact form or by email: name, email address, country, the location of the property you are considering, the stage of your project and the content of your message.</p>
+
+  <h2>3. Why we process it</h2>
+  <p>We process this data solely to answer your enquiry, to assess the feasibility of the project you describe, and — if a professional engagement follows — to prepare and perform it (Art. 6(1)(b) GDPR, pre-contractual measures; Art. 6(1)(a), your consent given via the form checkbox).</p>
+
+  <h2>4. How we process it — including AI tools</h2>
+  <p>Your enquiry is read and answered personally by the architect. In organising, translating, analysing and drafting responses and project documents, the studio also uses professional artificial-intelligence assistants — such as Anthropic Claude, OpenAI ChatGPT and Google Gemini — which may process the content of your enquiry as data processors. These providers may be established outside the European Union (in particular in the United States); transfers take place under the EU–U.S. Data Privacy Framework and/or Standard Contractual Clauses. The studio uses business-grade AI services configured so that submitted content is not used to train the providers' models. By submitting the form you expressly consent to this processing.</p>
+
+  <h2>5. Service providers</h2>
+  <ul>
+    <li><strong>Hosting</strong>: the website is served by GitHub Pages (GitHub, Inc., USA — EU–U.S. Data Privacy Framework). GitHub may process technical data such as your IP address in server logs for security and delivery purposes.</li>
+    <li><strong>Fonts</strong>: served by Bunny Fonts (BunnyWay d.o.o., EU) — a privacy-first service that does not store personal data.</li>
+    <li><strong>Contact form delivery</strong>: form submissions are relayed to our mailbox by FormSubmit (USA), which acts as a technical intermediary and does not retain your data beyond delivery.</li>
+    <li><strong>Email</strong>: our mailboxes are provided by Aruba S.p.A. (Italy, EU).</li>
+  </ul>
+
+  <h2>6. Retention</h2>
+  <p>Enquiry data is kept for the time needed to handle your request and, at most, for 24 months from our last exchange — unless a professional engagement follows, in which case data is kept for the duration of the engagement and the retention periods required by law.</p>
+
+  <h2>7. Your rights</h2>
+  <p>You may at any time request access to, rectification or erasure of your personal data, restriction of or objection to its processing, and data portability (Arts. 15–22 GDPR), and you may withdraw your consent at any time by writing to <a href="mailto:info@alessandrobuffi.com" style="border-bottom:1px solid var(--hair)">info@alessandrobuffi.com</a>. You also have the right to lodge a complaint with the Italian supervisory authority (Garante per la Protezione dei Dati Personali, www.garanteprivacy.it).</p>
+
+  <h2>8. Changes</h2>
+  <p>Any updates to this policy will be published on this page with a new "last updated" date.</p>
+</div>
+
+<div class="endfoot">
+  <div class="inner">
+    <span>© 2026 Alessandro Buffi Architect · VAT IT 03749400549</span>
+    <span>Architecture of Position — Umbria · Tuscany</span>
+    <span><a href="privacy.html" style="border-bottom:1px solid currentColor">Privacy</a></span>
+  </div>
+</div>
+
+<script>
+const nav=document.getElementById('nav'),burger=document.getElementById('burger');
+burger.addEventListener('click',()=>{const o=nav.classList.toggle('open');burger.textContent=o?'Close':'Menu';burger.setAttribute('aria-expanded',o)});
+</script>
+</body>
+</html>

@@ -10,9 +10,7 @@
 <meta property="og:title" content="Contact — Alessandro Buffi Architect">
 <meta property="og:description" content="Tell us about the site and your intentions. Studios in Perugia and Florence.">
 <meta property="og:image" content="https://www.alessandrobuffi.com/assets/alma-landscape.jpg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.bunny.net/css?family=marcellus:400|eb-garamond:400,400i,700,700i|inter:300,400,500&display=swap" rel="stylesheet">
 <style>:root{
   --paper:#EFEAE0;
   --paper-2:#E6DFD2;
@@ -210,7 +208,11 @@ svg .lead{stroke:#1D1A15;stroke-width:.6;fill:none;opacity:.5}
 
 <div class="contact-grid">
   <!-- ============ FORM ============ -->
-  <form id="cform" novalidate>
+  <form id="cform" action="https://formsubmit.co/info@alessandrobuffi.com" method="POST">
+    <input type="hidden" name="_subject" value="New enquiry — alessandrobuffi.com">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_next" value="https://www.alessandrobuffi.com/thanks.html">
+    <input type="text" name="_honey" style="display:none">
     <div class="row">
       <div class="field">
         <label for="fname">Name</label>
@@ -247,8 +249,8 @@ svg .lead{stroke:#1D1A15;stroke-width:.6;fill:none;opacity:.5}
       <textarea id="fmsg" name="message" placeholder="The land, the buildings, what you imagine there…"></textarea>
     </div>
     <div class="consent">
-      <input type="checkbox" id="fconsent" required>
-      <span>I consent to the processing of my personal data for the purpose of replying to this enquiry (privacy policy).</span>
+      <input type="checkbox" id="fconsent" name="privacy_consent" value="accepted" required>
+      <span>I consent to the processing of my personal data to answer this enquiry, including the use of AI tools as described in the <a href="privacy.html" style="border-bottom:1px solid var(--hair)">Privacy Policy</a>.</span>
     </div>
     <button class="submit" type="submit">Send the enquiry</button>
     <p class="form-note">Prefer email? Write directly to <a href="mailto:info@alessandrobuffi.com" style="border-bottom:1px solid var(--hair)">info@alessandrobuffi.com</a></p>
@@ -350,7 +352,7 @@ svg .lead{stroke:#1D1A15;stroke-width:.6;fill:none;opacity:.5}
   <div class="inner">
     <span>© 2026 Alessandro Buffi Architect · VAT IT 03749400549</span>
     <span>Architecture of Position — Umbria · Tuscany</span>
-    <span>EN — DE &amp; NL forthcoming</span>
+    <span><a href="privacy.html" style="border-bottom:1px solid currentColor">Privacy</a> · EN — DE &amp; NL forthcoming</span>
   </div>
 </div>
 
@@ -369,14 +371,7 @@ const hints={
 const sel=document.getElementById('fstage'),hint=document.getElementById('stagehint');
 sel.addEventListener('change',()=>{hint.textContent=hints[sel.value]||"Choosing a stage helps us point you to the right starting service.";});
 
-document.getElementById('cform').addEventListener('submit',e=>{
-  e.preventDefault();
-  const v=id=>document.getElementById(id).value;
-  if(!v('fname')||!v('femail')){alert('Please enter your name and email.');return}
-  if(!document.getElementById('fconsent').checked){alert('Please confirm the privacy consent.');return}
-  const body=`Name: ${v('fname')}%0D%0AEmail: ${v('femail')}%0D%0ACountry: ${v('fcountry')}%0D%0AProperty / area: ${v('fwhere')}%0D%0AStage: ${sel.options[sel.selectedIndex].text}%0D%0A%0D%0A${encodeURIComponent(v('fmsg'))}`;
-  location.href=`mailto:info@alessandrobuffi.com?subject=${encodeURIComponent('Enquiry — '+(v('fwhere')||'new project'))}&body=${body}`;
-});
+
 </script>
 </body>
 </html>
