@@ -29,6 +29,6 @@
   production, EUR 2.5M of works.
 
 ## Links
-- Home: https://www.alessandrobuffi.com/
-- Contact: https://www.alessandrobuffi.com/contact.html
-- Email: info@alessandrobuffi.com
+- [Home](https://www.alessandrobuffi.com/)
+- [Contact](https://www.alessandrobuffi.com/contact.html)
+- [Email](mailto:info@alessandrobuffi.com)
