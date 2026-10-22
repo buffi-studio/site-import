@@ -6,6 +6,10 @@
 <title>Alessandro Buffi Architect — Estates, Wineries &amp; Rural Hospitality | Umbria and Tuscany</title>
 <meta name="description" content="Architecture studio in Perugia and Florence for international and Italian clients: estates, wineries, historic villas and rural hospitality in Umbria and Tuscany.">
 <link rel="canonical" href="https://www.alessandrobuffi.com/">
+<link rel="alternate" hreflang="en" href="https://www.alessandrobuffi.com/">
+<link rel="alternate" hreflang="it" href="https://www.alessandrobuffi.com/it/">
+<link rel="alternate" hreflang="de" href="https://www.alessandrobuffi.com/de/">
+<link rel="alternate" hreflang="x-default" href="https://www.alessandrobuffi.com/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Alessandro Buffi Architect — Architecture of Position">
 <meta property="og:description" content="Estates, wineries and rural hospitality in Umbria and Tuscany. Architecture measured against the land — from the first site study to the finished work.">
@@ -48,6 +52,9 @@ nav{display:flex;gap:2.2vw}
 nav a{font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;opacity:.85;transition:opacity .3s}
 nav a:hover{opacity:1}
 nav a.active{opacity:1;border-bottom:1px solid currentColor;padding-bottom:2px}
+nav .langs{display:flex;gap:.9em;margin-left:.6vw;padding-left:1.6vw;border-left:1px solid currentColor}
+nav .langs a{opacity:.55}
+nav .langs a[aria-current]{opacity:1}
 .burger{display:none}
 
 /* hero */
@@ -113,6 +120,7 @@ footer .inner{max-width:var(--max);margin:0 auto;padding:26px 4vw;display:flex;j
   nav{display:none}
   nav.open{display:flex;position:fixed;inset:0;background:var(--steel);color:var(--paper);flex-direction:column;justify-content:center;align-items:center;gap:34px}
   nav.open a{font-size:.85rem}
+  nav.open .langs{border-left:none;margin:0;padding:0}
   .burger{display:block;background:none;border:none;color:inherit;font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;cursor:pointer;z-index:60;position:relative}
   section{padding:80px 0}
   .duo{grid-template-columns:1fr;gap:44px}
@@ -272,6 +280,7 @@ footer .inner{max-width:var(--max);margin:0 auto;padding:26px 4vw;display:flex;j
     <a href="#work">Built Work</a>
     <a href="#approach">Approach</a>
     <a href="contact.html">Contact</a>
+    <span class="langs"><a href="/" lang="en" hreflang="en" aria-current="page">EN</a><a href="/it/" lang="it" hreflang="it">IT</a><a href="/de/" lang="de" hreflang="de">DE</a></span>
   </nav>
 </header>
 <main>
