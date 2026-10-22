@@ -324,6 +324,7 @@ const hd=document.getElementById('hd');
 addEventListener('scroll',()=>{hd.classList.add('scrolled')},{passive:true});
 const nav=document.getElementById('nav'),burger=document.getElementById('burger');
 burger.addEventListener('click',()=>{const o=nav.classList.toggle('open');burger.textContent=o?"Chiudi":"Menu";burger.setAttribute('aria-expanded',o)});
+document.querySelectorAll('.langs a').forEach(a=>a.addEventListener('click',()=>{try{localStorage.setItem('ab-lang',a.lang)}catch(e){}}));
 
 const hints={
   exploring:"In questa fase lo studio accompagna la ricerca con la lettura dei siti selezionati: vincoli, visuali, potenzialità. (Servizio 01)",

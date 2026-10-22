@@ -324,6 +324,7 @@ const hd=document.getElementById('hd');
 addEventListener('scroll',()=>{hd.classList.add('scrolled')},{passive:true});
 const nav=document.getElementById('nav'),burger=document.getElementById('burger');
 burger.addEventListener('click',()=>{const o=nav.classList.toggle('open');burger.textContent=o?"Schließen":"Menü";burger.setAttribute('aria-expanded',o)});
+document.querySelectorAll('.langs a').forEach(a=>a.addEventListener('click',()=>{try{localStorage.setItem('ab-lang',a.lang)}catch(e){}}));
 
 const hints={
   exploring:"Meist begleiten wir die Suche mit einer Standort- und Machbarkeitsstudie zu den Anwesen Ihrer engeren Wahl – damit Sie den richtigen Hang kaufen, nicht nur einen schönen. (Leistung 01)",

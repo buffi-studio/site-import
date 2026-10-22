@@ -439,6 +439,7 @@ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.targ
 document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 const nav=document.getElementById('nav'),burger=document.getElementById('burger');
 burger.addEventListener('click',()=>{const o=nav.classList.toggle('open');burger.textContent=o?"Schließen":"Menü";burger.setAttribute('aria-expanded',o)});
+document.querySelectorAll('.langs a').forEach(a=>a.addEventListener('click',()=>{try{localStorage.setItem('ab-lang',a.lang)}catch(e){}}));
 nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');burger.textContent="Menü";burger.setAttribute('aria-expanded','false')}));
 
 // gallery drift

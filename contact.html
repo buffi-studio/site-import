@@ -324,6 +324,7 @@ const hd=document.getElementById('hd');
 addEventListener('scroll',()=>{hd.classList.add('scrolled')},{passive:true});
 const nav=document.getElementById('nav'),burger=document.getElementById('burger');
 burger.addEventListener('click',()=>{const o=nav.classList.toggle('open');burger.textContent=o?'Close':'Menu';burger.setAttribute('aria-expanded',o)});
+document.querySelectorAll('.langs a').forEach(a=>a.addEventListener('click',()=>{try{localStorage.setItem('ab-lang',a.lang)}catch(e){}}));
 
 const hints={
   exploring:"We usually support the search with a Site & Feasibility Study on the properties you shortlist — so you buy the right hillside, not just a beautiful one. (Service 01)",

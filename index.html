@@ -10,6 +10,14 @@
 <link rel="alternate" hreflang="it" href="https://www.alessandrobuffi.com/it/">
 <link rel="alternate" hreflang="de" href="https://www.alessandrobuffi.com/de/">
 <link rel="alternate" hreflang="x-default" href="https://www.alessandrobuffi.com/">
+<script id="lang-redirect">
+/* home EN: alla prima visita porta su /it/ o /de/ in base alla lingua del browser; poi vale la scelta salvata dal selettore */
+(function(){try{
+  var s=localStorage.getItem('ab-lang');
+  if(!s){var l=((navigator.languages&&navigator.languages[0])||navigator.language||'').slice(0,2).toLowerCase();s=(l==='it'||l==='de')?l:'en';localStorage.setItem('ab-lang',s);}
+  if(s==='it'||s==='de')location.replace('/'+s+'/'+location.hash);
+}catch(e){}})();
+</script>
 <meta property="og:type" content="website">
 <meta property="og:title" content="Alessandro Buffi Architect — Architecture of Position">
 <meta property="og:description" content="Estates, wineries and rural hospitality in Umbria and Tuscany. Architecture measured against the land — from the first site study to the finished work.">
@@ -439,6 +447,7 @@ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.targ
 document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 const nav=document.getElementById('nav'),burger=document.getElementById('burger');
 burger.addEventListener('click',()=>{const o=nav.classList.toggle('open');burger.textContent=o?'Close':'Menu';burger.setAttribute('aria-expanded',o)});
+document.querySelectorAll('.langs a').forEach(a=>a.addEventListener('click',()=>{try{localStorage.setItem('ab-lang',a.lang)}catch(e){}}));
 nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');burger.textContent='Menu';burger.setAttribute('aria-expanded','false')}));
 
 // gallery drift
