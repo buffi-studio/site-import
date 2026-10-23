@@ -31,4 +31,6 @@
 ## Links
 - [Home](https://www.alessandrobuffi.com/)
 - [Contact](https://www.alessandrobuffi.com/contact.html)
+- [Home — Italiano](https://www.alessandrobuffi.com/it/)
+- [Contatti — Italiano](https://www.alessandrobuffi.com/it/contact.html)
 - [Email](mailto:info@alessandrobuffi.com)

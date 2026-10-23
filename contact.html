@@ -6,6 +6,9 @@
 <title>Contact — Alessandro Buffi Architect | Perugia &amp; Florence</title>
 <meta name="description" content="Write to Alessandro Buffi Architect about your estate, winery or hospitality project in Umbria or Tuscany. Studios in Perugia and Florence. Personal reply within two working days.">
 <link rel="canonical" href="https://www.alessandrobuffi.com/contact.html">
+<link rel="alternate" hreflang="en" href="https://www.alessandrobuffi.com/contact.html">
+<link rel="alternate" hreflang="it" href="https://www.alessandrobuffi.com/it/contact.html">
+<link rel="alternate" hreflang="x-default" href="https://www.alessandrobuffi.com/contact.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Contact — Alessandro Buffi Architect">
 <meta property="og:description" content="Tell us about the site and your intentions. Studios in Perugia and Florence.">
@@ -46,6 +49,8 @@ nav{display:flex;gap:2.2vw}
 nav a{font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;opacity:.85;transition:opacity .3s}
 nav a:hover{opacity:1}
 nav a.active{opacity:1;border-bottom:1px solid currentColor;padding-bottom:2px}
+nav .langs{display:flex;gap:.9em;margin-left:.6vw;padding-left:1.6vw;border-left:1px solid currentColor}
+nav .langs a[aria-current]{display:none}
 .burger{display:none}
 
 /* hero */
@@ -111,6 +116,7 @@ footer .inner{max-width:var(--max);margin:0 auto;padding:26px 4vw;display:flex;j
   nav{display:none}
   nav.open{display:flex;position:fixed;inset:0;background:var(--steel);color:var(--paper);flex-direction:column;justify-content:center;align-items:center;gap:34px}
   nav.open a{font-size:.85rem}
+  nav.open .langs{border-left:none;margin:0;padding:0}
   .burger{display:block;background:none;border:none;color:inherit;font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;cursor:pointer;z-index:60;position:relative}
   section{padding:80px 0}
   .duo{grid-template-columns:1fr;gap:44px}
@@ -223,6 +229,7 @@ picture{display:contents}
     <a href="index.html#work">Built Work</a>
     <a href="index.html#approach">Approach</a>
     <a href="contact.html" class="active">Contact</a>
+    <span class="langs"><a href="/contact.html" lang="en" hreflang="en" aria-current="page">EN</a><a href="/it/contact.html" lang="it" hreflang="it">IT</a></span>
   </nav>
 </header>
 
@@ -230,7 +237,7 @@ picture{display:contents}
   <div class="headcol"><div class="page-head">
   <span class="kicker">Contact</span>
   <h1>Begin with the land</h1>
-  <p>Tell us about the site and your intentions — a few lines are enough. Every enquiry receives a personal reply within two working days, in English or Italian.</p>
+  <p>Tell us about the site and your intentions — a few lines are enough. Every enquiry receives a personal reply within two working days, in English, German or Italian.</p>
 </div></div>
   <!-- ============ FORM ============ -->
   <form id="cform" action="https://formsubmit.co/ajax/004591619dab621e0643b4b6b70ac233" method="POST" novalidate>
@@ -287,7 +294,7 @@ picture{display:contents}
   <aside class="who">
     <picture><source type="image/webp" srcset="/assets/portrait-sm.webp 600w, /assets/portrait-lg.webp 1000w" sizes="(max-width:820px) 90vw, 40vw"><img src="/assets/portrait.jpg" alt="Alessandro Buffi, architect — Perugia and Florence" width="800" height="800" decoding="async" loading="lazy"></picture>
     <h2>ALESSANDRO BUFFI</h2>
-    <p>Alessandro Buffi is an Italian architect working between Perugia and Florence — trained in architecture and building engineering, with professional experience between Italy, New York and London, and a long collaboration with the Florentine studio of architect Francesco Buffi on projects across Tuscany. The studio follows a small number of commissions at a time, each led personally from the first walk on the land to the direction of works.</p>
+    <p>Alessandro Buffi is a second-generation Italian architect working between Perugia and Florence for Italian and international owners. Co-founder of materieunite, awarded the New European Bauhaus Prize 2021. In 2026, with Matteo Sannipoli, he received the IN/Architettura Prize for Agriturismo Alma in Assisi. The studio follows a small number of commissions at a time, each led personally from the first walk on the land to the direction of works.</p>
     <p>Your enquiry is read and answered personally by the architect — not by an office manager.</p>
     <div class="cred">Studios in Perugia and Florence<br><a href="https://www.linkedin.com/in/alessandrobuffi/" target="_blank" rel="noopener" style="border-bottom:1px solid var(--hair)">LinkedIn ↗</a></div>
   </aside>
@@ -315,6 +322,7 @@ const hd=document.getElementById('hd');
 addEventListener('scroll',()=>{hd.classList.add('scrolled')},{passive:true});
 const nav=document.getElementById('nav'),burger=document.getElementById('burger');
 burger.addEventListener('click',()=>{const o=nav.classList.toggle('open');burger.textContent=o?'Close':'Menu';burger.setAttribute('aria-expanded',o)});
+document.querySelectorAll('.langs a').forEach(a=>a.addEventListener('click',()=>{try{localStorage.setItem('ab-lang',a.lang)}catch(e){}}));
 
 const hints={
   exploring:"We usually support the search with a Site & Feasibility Study on the properties you shortlist — so you buy the right hillside, not just a beautiful one. (Service 01)",
@@ -359,7 +367,7 @@ sel.addEventListener('change',()=>{hint.textContent=hints[sel.value]||"Choosing 
       .then(function(res){return res.json().catch(function(){return {};}).then(function(d){return {ok:res.ok,d:d};});})
       .then(function(r){
         if(r.ok){
-          form.innerHTML='<div class="form-sent"><h2>Thank you</h2><p>Your message has reached the studio. You will receive a personal reply within two working days, in English or Italian.</p><p class="form-note">If anything is urgent in the meantime, write to <a href="mailto:info@alessandrobuffi.com" style="border-bottom:1px solid var(--hair)">info@alessandrobuffi.com</a>.</p></div>';
+          form.innerHTML='<div class="form-sent"><h2>Thank you</h2><p>Your message has reached the studio. You will receive a personal reply within two working days, in English, German or Italian.</p><p class="form-note">If anything is urgent in the meantime, write to <a href="mailto:info@alessandrobuffi.com" style="border-bottom:1px solid var(--hair)">info@alessandrobuffi.com</a>.</p></div>';
           window.scrollTo({top:form.getBoundingClientRect().top+window.scrollY-120,behavior:'smooth'});
         }else{throw new Error((r.d&&r.d.message)||'error');}
       })
