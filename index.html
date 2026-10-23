@@ -8,14 +8,13 @@
 <link rel="canonical" href="https://www.alessandrobuffi.com/">
 <link rel="alternate" hreflang="en" href="https://www.alessandrobuffi.com/">
 <link rel="alternate" hreflang="it" href="https://www.alessandrobuffi.com/it/">
-<link rel="alternate" hreflang="de" href="https://www.alessandrobuffi.com/de/">
 <link rel="alternate" hreflang="x-default" href="https://www.alessandrobuffi.com/">
 <script id="lang-redirect">
-/* home EN: alla prima visita porta su /it/ o /de/ in base alla lingua del browser; poi vale la scelta salvata dal selettore */
+/* home EN: alla prima visita porta su /it/ in base alla lingua del browser; poi vale la scelta salvata dal selettore */
 (function(){try{
   var s=localStorage.getItem('ab-lang');
-  if(!s){var l=((navigator.languages&&navigator.languages[0])||navigator.language||'').slice(0,2).toLowerCase();s=(l==='it'||l==='de')?l:'en';localStorage.setItem('ab-lang',s);}
-  if(s==='it'||s==='de')location.replace('/'+s+'/'+location.hash);
+  if(!s){var l=((navigator.languages&&navigator.languages[0])||navigator.language||'').slice(0,2).toLowerCase();s=(l==='it')?l:'en';localStorage.setItem('ab-lang',s);}
+  if(s==='it')location.replace('/'+s+'/'+location.hash);
 }catch(e){}})();
 </script>
 <meta property="og:type" content="website">
@@ -287,7 +286,7 @@ footer .inner{max-width:var(--max);margin:0 auto;padding:26px 4vw;display:flex;j
     <a href="#work">Built Work</a>
     <a href="#approach">Approach</a>
     <a href="contact.html">Contact</a>
-    <span class="langs"><a href="/" lang="en" hreflang="en" aria-current="page">EN</a><a href="/it/" lang="it" hreflang="it">IT</a><a href="/de/" lang="de" hreflang="de">DE</a></span>
+    <span class="langs"><a href="/" lang="en" hreflang="en" aria-current="page">EN</a><a href="/it/" lang="it" hreflang="it">IT</a></span>
   </nav>
 </header>
 <main>
