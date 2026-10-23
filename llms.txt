@@ -33,4 +33,6 @@
 - [Contact](https://www.alessandrobuffi.com/contact.html)
 - [Home — Italiano](https://www.alessandrobuffi.com/it/)
 - [Contatti — Italiano](https://www.alessandrobuffi.com/it/contact.html)
+- [Startseite — Deutsch](https://www.alessandrobuffi.com/de/)
+- [Kontakt — Deutsch](https://www.alessandrobuffi.com/de/contact.html)
 - [Email](mailto:info@alessandrobuffi.com)
