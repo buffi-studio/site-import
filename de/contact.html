@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kontakt — Alessandro Buffi Architect | Perugia &amp; Florenz</title>
-<meta name="description" content="Schreiben Sie Alessandro Buffi Architect zu Ihrem Landgut, Weingut oder Hotelprojekt in Umbrien oder der Toskana. Büros in Perugia und Florenz. Persönliche Antwort innerhalb von zwei Werktagen.">
+<title>Kontakt — Alessandro Buffi Architekt | Perugia &amp; Florenz</title>
+<meta name="description" content="Schreiben Sie Alessandro Buffi Architekt zu Ihrem Landgut, Weingut oder Hotelprojekt in Umbrien oder der Toskana. Büros in Perugia und Florenz. Persönliche Antwort innerhalb von zwei Werktagen.">
 <link rel="canonical" href="https://www.alessandrobuffi.com/de/contact.html">
 <link rel="alternate" hreflang="en" href="https://www.alessandrobuffi.com/contact.html">
 <link rel="alternate" hreflang="it" href="https://www.alessandrobuffi.com/it/contact.html">
@@ -267,13 +267,13 @@ picture{display:contents}
       </div>
     </div>
     <div class="field">
-      <label for="fstage">Wo stehen Sie gerade?</label>
+      <label for="fstage">An welchem Punkt stehen Sie gerade?</label>
       <select id="fstage" name="stage">
         <option value="" selected>Wählen Sie die passendste Option…</option>
         <option value="exploring">Auf der Suche — ich habe noch kein Anwesen gefunden</option>
         <option value="buying">Kauf — ein Anwesen ist gefunden oder in Verhandlung</option>
         <option value="owner">Eigentümer — das Anwesen gehört mir und ich plane seine Umgestaltung</option>
-        <option value="developing">Entwicklung — ein Hotel- oder Weingutsprojekt</option>
+        <option value="developing">Entwicklung — ein Hotel- oder Weingutprojekt</option>
         <option value="other">Sonstiges</option>
       </select>
       <div class="hint" id="stagehint">Die Angabe Ihrer Phase hilft uns, Ihnen den passenden Einstieg zu empfehlen.</div>
@@ -295,7 +295,7 @@ picture{display:contents}
   <aside class="who">
     <picture><source type="image/webp" srcset="/assets/portrait-sm.webp 600w, /assets/portrait-lg.webp 1000w" sizes="(max-width:820px) 90vw, 40vw"><img src="/assets/portrait.jpg" alt="Alessandro Buffi, Architekt — Perugia und Florenz" width="800" height="800" decoding="async" loading="lazy"></picture>
     <h2>ALESSANDRO BUFFI</h2>
-    <p>Alessandro Buffi ist italienischer Architekt in zweiter Generation und arbeitet zwischen Perugia und Florenz für italienische und internationale Bauherren. Mitgründer von materieunite, ausgezeichnet mit dem New European Bauhaus Prize 2021. 2026 erhielt er gemeinsam mit Matteo Sannipoli den Preis IN/Architettura Marche e Umbria für das Agriturismo Alma in Assisi. Das Büro betreut nur wenige Aufträge gleichzeitig und führt jeden persönlich – vom ersten Gang über das Grundstück bis zur Bauleitung.</p>
+    <p>Alessandro Buffi ist ein italienischer Architekt in zweiter Generation und arbeitet zwischen Perugia und Florenz für italienische und internationale Bauherren. Mitgründer von materieunite, ausgezeichnet mit dem New European Bauhaus Prize 2021. 2026 erhielt er gemeinsam mit Matteo Sannipoli den Preis IN/Architettura Marche e Umbria für das Agriturismo Alma in Assisi. Das Büro betreut nur wenige Aufträge gleichzeitig und führt jeden persönlich – vom ersten Gang über das Grundstück bis zur Bauleitung – aus.</p>
     <p>Ihre Anfrage wird vom Architekten persönlich gelesen und beantwortet – nicht vom Sekretariat.</p>
     <div class="cred">Büros in Perugia und Florenz<br><a href="https://www.linkedin.com/in/alessandrobuffi/" target="_blank" rel="noopener" style="border-bottom:1px solid var(--hair)">LinkedIn ↗</a></div>
   </aside>
@@ -326,10 +326,10 @@ burger.addEventListener('click',()=>{const o=nav.classList.toggle('open');burger
 document.querySelectorAll('.langs a').forEach(a=>a.addEventListener('click',()=>{try{localStorage.setItem('ab-lang',a.lang)}catch(e){}}));
 
 const hints={
-  exploring:"Meist begleiten wir die Suche mit einer Standort- und Machbarkeitsstudie zu den Anwesen Ihrer engeren Wahl – damit Sie den richtigen Hang kaufen, nicht nur einen schönen. (Leistung 01)",
+  exploring:"Meist begleiten wir die Suche mit einer Standort- und Machbarkeitsstudie zu den Anwesen Ihrer engeren Wahl – damit Sie den richtigen Hügel kaufen, nicht nur einen schönen. (Leistung 01)",
   buying:"Bevor Sie unterschreiben: Eine Standort- und Machbarkeitsstudie prüft Auflagen, Kubaturen und tatsächliches Potenzial – die technische Seite Ihrer Due Diligence. (Leistung 01)",
-  owner:"Wir würden mit einem Masterplan für das gesamte Anwesen beginnen – Gebäude, Land, Landschaft – und dann über Genehmigungen zur Bauausführung gehen. (Leistungen 02–05)",
-  developing:"Hotel- und Weingutsprojekte beginnen als Business Case: Programm, Genehmigungen, Budget und Zeitplan – vor jeder Zeichnung. (Leistungen 01–04, nach der Eröffnung mit langfristiger Betreuung)"
+  owner:"Wir würden mit einem Masterplan für das gesamte Anwesen beginnen – Gebäude, Land, Landschaft – und dann zu Genehmigungen zur Bauausführung übergehen. (Leistungen 02–05)",
+  developing:"Hotel- und Weingutprojekte beginnen als Business Case: Programm, Genehmigungen, Budget und Zeitplan – vor jeder Zeichnung. (Leistungen 01–04, nach der Eröffnung mit langfristiger Betreuung)"
 };
 const sel=document.getElementById('fstage'),hint=document.getElementById('stagehint');
 sel.addEventListener('change',()=>{hint.textContent=hints[sel.value]||"Die Angabe Ihrer Phase hilft uns, Ihnen den passenden Einstieg zu empfehlen.";});
@@ -350,7 +350,7 @@ sel.addEventListener('change',()=>{hint.textContent=hints[sel.value]||"Die Angab
   if(consentBox)consentBox.addEventListener('change',function(){if(consentBox.checked)consentWrap.classList.remove('has-error');});
   function validate(){
     var ok=true;
-    [['ffname',"Bitte geben Sie Ihren Vornamen an."],['flname',"Bitte ergänzen Sie Ihren Nachnamen."],['fmsg',"Ein paar Zeilen zum Ort helfen uns, gut zu antworten."]].forEach(function(c){var el=document.getElementById(c[0]);if(!el.value.trim()){setErr(el,c[1]);ok=false;}});
+    [['ffname',"Bitte geben Sie Ihren Vornamen an."],['flname',"Bitte ergänzen Sie Ihren Nachnamen."],['fmsg',"Ein paar Zeilen zum Ort helfen uns, gezielt zu antworten."]].forEach(function(c){var el=document.getElementById(c[0]);if(!el.value.trim()){setErr(el,c[1]);ok=false;}});
     var email=document.getElementById('femail');
     if(!email.value.trim()){setErr(email,"Für die Antwort brauchen wir Ihre E-Mail.");ok=false;}
     else if(!emailOk(email.value.trim())){setErr(email,"Die E-Mail-Adresse scheint unvollständig.");ok=false;}
