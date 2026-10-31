@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alessandro Buffi Architekt — Landgüter, Weingüter &amp; ländliche Hotellerie | Umbrien und Toskana</title>
+<meta name="description" content="Architekturbüro in Perugia und Florenz für internationale und italienische Bauherren: Landgüter, Weingüter, historische Villen und ländliche Hotellerie in Umbrien und der Toskana.">
+<link rel="canonical" href="https://www.alessandrobuffi.com/de/">
+<link rel="alternate" hreflang="en" href="https://www.alessandrobuffi.com/">
+<link rel="alternate" hreflang="it" href="https://www.alessandrobuffi.com/it/">
+<link rel="alternate" hreflang="de" href="https://www.alessandrobuffi.com/de/">
+<link rel="alternate" hreflang="x-default" href="https://www.alessandrobuffi.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Alessandro Buffi Architekt — Architecture of Position">
+<meta property="og:description" content="Landgüter, Weingüter und ländliche Hotellerie in Umbrien und der Toskana. Architektur, gemessen am Land — von der ersten Standortstudie bis zum fertigen Werk.">
+<meta property="og:image" content="https://www.alessandrobuffi.com/assets/og-cover.jpg">
+<meta property="og:url" content="https://www.alessandrobuffi.com/de/">
+  <link rel="preconnect" href="https://fonts.bunny.net" crossorigin>
+<link href="https://fonts.bunny.net/css?family=marcellus:400|eb-garamond:400,400i,700,700i|inter:300,400,500&display=swap" rel="stylesheet">
+<style>:root{
+  --paper:#EFEAE0;
+  --paper-2:#E6DFD2;
+  --stone:#8A7E6C;
+  --olive:#575E48;
+  --steel:#28241F;
+  --ink:#1D1A15;
+  --hair:rgba(29,26,21,.22);
+  --hair-light:rgba(239,234,224,.35);
+  --max:1240px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:'Inter',sans-serif;font-weight:300;font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased}
+img{display:block;width:100%;height:auto}picture{display:contents}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:'Marcellus',serif;font-weight:400;text-transform:uppercase}
+::selection{background:var(--olive);color:var(--paper)}
+
+/* logotype */
+.wordmark{font-family:'EB Garamond',serif;white-space:nowrap;line-height:1;letter-spacing:.005em}
+.wordmark .bk{font-style:italic;font-weight:700;font-size:1.28em;position:relative;top:.04em}
+.wordmark .bk.l{margin-right:.28em}
+.wordmark .bk.r{margin-left:.28em}
+.tagline{font-family:'EB Garamond',serif;font-size:.36em;letter-spacing:.34em;text-transform:uppercase;display:block;text-align:center;margin-top:.5em}
+
+/* header */
+header{position:fixed;inset:0 0 auto 0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:22px 4vw;transition:background .4s,padding .4s,color .4s;color:var(--paper)}
+header.scrolled{background:rgba(239,234,224,.94);color:var(--ink);padding:14px 4vw;backdrop-filter:blur(8px);border-bottom:1px solid var(--hair)}
+header.dark-start{color:var(--ink)}
+header .wordmark{font-size:1.3rem}
+nav{display:flex;gap:2.2vw}
+nav a{font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;opacity:.85;transition:opacity .3s}
+nav a:hover{opacity:1}
+nav a.active{opacity:1;border-bottom:1px solid currentColor;padding-bottom:2px}
+nav .langs{display:flex;gap:.9em;margin-left:.6vw;padding-left:1.6vw;border-left:1px solid currentColor}
+nav .langs a[aria-current]{display:none}
+.burger{display:none}
+
+/* hero */
+.hero{position:relative;height:100svh;min-height:560px;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(29,26,21,.55) 0%,rgba(29,26,21,.08) 45%,rgba(29,26,21,.25) 100%)}
+.hero-inner{position:absolute;z-index:2;inset:auto 4vw 9vh 4vw;color:var(--paper)}
+.hero-eyebrow{font-size:.68rem;letter-spacing:.34em;text-transform:uppercase;opacity:.85;margin-bottom:1.4rem}
+.hero h1{font-size:clamp(2.4rem,6.2vw,5.4rem);letter-spacing:.08em;line-height:1.08}
+.hero p{max-width:30em;margin-top:1.6rem;font-size:1rem;line-height:1.9;opacity:.93}
+.hero-alt{position:absolute;z-index:2;right:4vw;bottom:9vh;color:var(--paper);font-size:.66rem;letter-spacing:.3em;text-transform:uppercase;writing-mode:vertical-rl;opacity:.7;display:flex;align-items:center;gap:12px}
+.hero-alt::after{content:"";width:1px;height:64px;background:var(--paper);opacity:.6}
+
+/* elevation dividers + commons */
+.elev{display:flex;align-items:center;gap:22px;max-width:var(--max);margin:0 auto;padding:0 4vw;font-size:.66rem;letter-spacing:.34em;text-transform:uppercase;color:var(--stone)}
+.elev::before,.elev::after{content:"";flex:1;height:1px;background:var(--hair)}
+.elev span b{font-weight:400;color:var(--ink)}
+section{padding:110px 0}
+.kicker{font-size:.66rem;letter-spacing:.34em;text-transform:uppercase;color:var(--olive);margin-bottom:1.6rem;display:block}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 4vw}
+
+/* figures */
+.full{max-width:1500px;margin:0 auto}
+figure{margin:0}
+figcaption{font-size:.72rem;letter-spacing:.14em;color:#6E6455;padding:14px 4vw 0;text-transform:uppercase}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--olive);outline-offset:3px}
+.full figcaption{max-width:var(--max);margin:0 auto}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:4vw;max-width:var(--max);margin:9vh auto;padding:0 4vw;align-items:start}
+.duo figcaption{padding:14px 0 0}
+.duo .off{margin-top:9vh}
+.gap{margin:9vh auto}
+.datastrip{max-width:var(--max);margin:80px auto 0;padding:34px 4vw 0;border-top:1px solid var(--hair);display:grid;grid-template-columns:repeat(6,1fr);gap:24px}
+.datastrip div b{display:block;font-size:.62rem;letter-spacing:.28em;text-transform:uppercase;color:var(--stone);font-weight:400;margin-bottom:.5rem}
+.datastrip div{font-size:.85rem}
+
+/* contact */
+#contact{position:relative;color:var(--paper);padding:0}
+#contact .bg{position:absolute;inset:0;overflow:hidden}
+#contact .bg img{width:100%;height:100%;object-fit:cover}
+#contact .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(24,21,17,.78) 0%,rgba(24,21,17,.45) 55%,rgba(24,21,17,.82) 100%)}
+#contact .inner{position:relative;z-index:2;max-width:var(--max);margin:0 auto;padding:130px 4vw 90px}
+#contact .kicker{color:var(--paper);opacity:.7}
+#contact h2{font-size:clamp(1.9rem,4vw,3.1rem);letter-spacing:.1em;max-width:14em}
+#contact .lead{max-width:36em;margin-top:1.8rem;opacity:.9;font-size:.95rem}
+.cmail{display:inline-block;font-family:'Marcellus',serif;font-size:clamp(1.2rem,2.6vw,1.9rem);letter-spacing:.06em;margin-top:2.6rem;border-bottom:1px solid var(--hair-light);padding-bottom:.3rem}
+.cgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:34px;margin-top:70px;padding-top:40px;border-top:1px solid var(--hair-light)}
+.cgrid b{display:block;font-size:.62rem;letter-spacing:.28em;text-transform:uppercase;opacity:.65;font-weight:400;margin-bottom:.7rem}
+.cgrid div{font-size:.88rem;line-height:1.9}
+.cwordmark{margin:80px auto 0;text-align:center;font-size:2rem;opacity:.9}
+footer{position:relative;z-index:2;border-top:1px solid var(--hair-light);margin-top:60px}
+footer .inner{max-width:var(--max);margin:0 auto;padding:26px 4vw;display:flex;justify-content:space-between;gap:20px;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;opacity:.65;color:var(--paper)}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity 1s cubic-bezier(.2,.6,.2,1),transform 1s cubic-bezier(.2,.6,.2,1)}
+.rv.on{opacity:1;transform:none}
+
+/* CTA link */
+.cta{display:inline-block;font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;border-bottom:1px solid var(--ink);padding-bottom:6px;margin-top:3rem;transition:opacity .3s}
+.cta:hover{opacity:.6}
+
+/* mobile */
+@media(max-width:880px){
+  /* il blur renderebbe l'header il riferimento di nav.open (position:fixed): il menu resterebbe alto come l'header */
+  header.scrolled{backdrop-filter:none}
+  .burger[aria-expanded="true"]{color:var(--paper)}
+  nav{display:none}
+  nav.open{display:flex;position:fixed;inset:0;background:var(--steel);color:var(--paper);flex-direction:column;justify-content:center;align-items:center;gap:34px}
+  nav.open a{font-size:.85rem}
+  nav.open .langs{border-left:none;margin:0;padding:0}
+  .burger{display:block;background:none;border:none;color:inherit;font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;cursor:pointer;z-index:60;position:relative}
+  section{padding:80px 0}
+  .duo{grid-template-columns:1fr;gap:44px}
+  .duo .off{margin-top:0}
+  .datastrip{grid-template-columns:1fr 1fr;gap:28px}
+  .cgrid{grid-template-columns:1fr}
+  .hero-alt{display:none}
+  footer .inner{flex-direction:column;gap:8px}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://www.alessandrobuffi.com/#studio",
+  "name": "Alessandro Buffi Architect",
+  "description": "Architekturbüro für Landgüter, Weingüter, historische Villen und ländliche Hotellerie in Umbrien und der Toskana. Machbarkeit, Entwurf, Genehmigungen und Bauleitung für internationale und italienische Bauherren.",
+  "url": "https://www.alessandrobuffi.com/",
+  "email": "info@alessandrobuffi.com",
+  "logo": "https://www.alessandrobuffi.com/apple-touch-icon.png",
+  "image": "https://www.alessandrobuffi.com/assets/og-cover.jpg",
+  "sameAs": ["https://www.linkedin.com/in/alessandrobuffi/"],
+  "founder": {"@type": "Person", "name": "Alessandro Buffi", "jobTitle": "Architect", "sameAs": "https://www.linkedin.com/in/alessandrobuffi/"},
+  "knowsLanguage": ["en", "de", "it"],
+  "areaServed": ["Umbria", "Tuscany", "Central Italy"],
+  "address": {"@type": "PostalAddress", "streetAddress": "Strada Bellocchio San Faustino 54", "addressLocality": "Perugia", "postalCode": "06126", "addressCountry": "IT"}
+}
+</script>
+<style>
+/* page-specific */
+#intro{padding-bottom:90px}
+#intro .grid{max-width:var(--max);margin:0 auto;padding:0 4vw;display:grid;grid-template-columns:7fr 5fr;gap:6vw;align-items:start}
+#intro h2{font-size:clamp(1.6rem,3.2vw,2.5rem);letter-spacing:.09em;line-height:1.4;text-transform:none;font-family:'Marcellus',serif}
+#intro h2 .up{text-transform:uppercase}
+#intro p{color:#3d382f;margin-top:1.6rem}
+#intro aside{border-left:1px solid var(--hair);padding-left:3vw;font-size:.85rem;color:#3d382f}
+#intro aside div{padding:14px 0;border-bottom:1px solid var(--hair)}
+#intro aside div:last-child{border-bottom:none}
+#intro aside b{display:block;font-size:.62rem;letter-spacing:.28em;text-transform:uppercase;color:var(--stone);font-weight:400;margin-bottom:.3rem}
+
+#work{padding-top:0}
+#work .head{max-width:900px;margin:0 auto 70px;padding:0 4vw;text-align:center}
+#work h2{font-size:clamp(2rem,4.6vw,3.4rem);letter-spacing:.1em}
+#work .sub{font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--stone);margin-top:1.2rem}
+#work .lede{margin-top:2.2rem;color:#3d382f}
+.gallery-wrap{margin-top:0}
+.gallery-head{max-width:var(--max);margin:0 auto 24px;padding:0 4vw;display:flex;justify-content:space-between;align-items:baseline}
+.gscroll{font-size:.66rem;letter-spacing:.3em;text-transform:uppercase;color:var(--stone)}
+.gallery{display:flex;gap:18px;overflow-x:auto;padding:0 4vw 18px;scrollbar-width:thin;scrollbar-color:var(--stone) transparent}
+.gallery figure{flex:0 0 auto;width:min(460px,78vw)}
+.gallery img{height:320px;width:100%;object-fit:cover}
+.gallery figcaption{padding:10px 0 0}
+
+#approach{background:var(--steel);color:var(--paper);padding-bottom:0}
+#approach .manifesto{max-width:880px;margin:0 auto;padding:0 4vw 90px;text-align:center}
+#approach .kicker{color:rgba(239,234,224,.6);text-align:center}
+#approach h2{font-size:clamp(1.5rem,3vw,2.3rem);letter-spacing:.1em;line-height:1.5}
+#approach h2 i{font-style:normal;color:#B9BFA3}
+#approach .manifesto p{margin-top:2.2rem;opacity:.85}
+#services-band{background:var(--paper-2);color:var(--ink);padding:90px 0 110px}
+#services-band .bandhead{max-width:var(--max);margin:0 auto 40px;padding:0 4vw;display:flex;align-items:baseline;justify-content:space-between;gap:20px;flex-wrap:wrap}
+#services-band h2{font-size:clamp(1.5rem,3vw,2.2rem);letter-spacing:.1em}
+#services-band .bandhead span{font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--olive)}
+.svc{max-width:var(--max);margin:0 auto;padding:0 4vw;display:grid;grid-template-columns:repeat(3,1fr);gap:0 5vw}
+.svc article{padding:30px 0;border-top:1px solid var(--hair)}
+.svc h3{font-size:.92rem;letter-spacing:.18em;display:flex;gap:14px;align-items:baseline}
+.svc h3 span{font-family:'Inter';font-size:.68rem;color:var(--olive);letter-spacing:.1em}
+.svc p{margin-top:.8rem;font-size:.87rem;color:#3d382f}
+.svc-note{max-width:var(--max);margin:48px auto 0;padding:0 4vw;font-size:.8rem;letter-spacing:.06em;color:var(--olive)}
+
+
+/* contact band (short, links to contact page) */
+#contact-band{position:relative;color:var(--paper);padding:0}
+#contact-band .bg{position:absolute;inset:0;overflow:hidden}
+#contact-band .bg img{width:100%;height:100%;object-fit:cover}
+#contact-band .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(24,21,17,.78) 0%,rgba(24,21,17,.5) 55%,rgba(24,21,17,.82) 100%)}
+#contact-band .inner{position:relative;z-index:2;max-width:var(--max);margin:0 auto;padding:140px 4vw 110px;text-align:center}
+#contact-band h2{font-size:clamp(1.9rem,4vw,3.1rem);letter-spacing:.1em}
+#contact-band p{max-width:36em;margin:1.8rem auto 0;opacity:.9;font-size:.95rem}
+#contact-band .cta{border-color:var(--paper);color:var(--paper)}
+#contact-band .cmail{font-size:1rem;font-family:'Inter';letter-spacing:.06em;margin-top:2rem;opacity:.8}
+#contact-band .cwordmark{margin-top:70px}
+
+@media(max-width:880px){
+  #intro .grid{grid-template-columns:1fr;gap:44px}
+  #intro aside{border-left:none;border-top:1px solid var(--hair);padding-left:0;padding-top:24px}
+  .svc{grid-template-columns:1fr}
+}
+</style>
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wo ist das Büro tätig?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Alessandro Buffi Architekt ist in Umbrien, der Toskana und ganz Mittelitalien tätig – mit Projekten für Landgüter, Weingüter, historische Villen und ländliche Hotellerie."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wer sind die Bauherren?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Internationale und italienische Bauherren, die Anwesen mit Land erwerben oder umgestalten – historische Landgüter, Weinberge und Bauernhäuser, die zu Orten der Gastlichkeit werden."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "In welchen Sprachen arbeiten Sie?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Das Büro arbeitet auf Englisch, Deutsch und Italienisch."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie beginnt ein Auftrag?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Jeder Auftrag beginnt mit einer Standort- und Machbarkeitsstudie – Auflagen, Kubaturen und tatsächliches Potenzial –, bevor irgendetwas versprochen wird."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Welche Leistungen bietet das Büro an?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sechs Phasen aus einer Hand: Standort- und Ankaufsprüfung, Architektur, Genehmigungen und denkmalrechtliche Erlaubnisse, Bauleitung, Innenräume und Landschaft sowie langfristige Betreuung."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Gibt es ein realisiertes Projekt zu sehen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Das Agriturismo Alma bei Assisi (2023–2026): ländliche Hotellerie und landwirtschaftliche Produktion, mit einem Bauvolumen von 2,5 Mio. €."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header id="hd">
+  <a class="wordmark" href="index.html"><span class="bk l">[</span>Alessandro Buffi<span class="bk r">]</span></a>
+  <button class="burger" id="burger" aria-label="Menü" aria-expanded="false">Menü</button>
+  <nav id="nav">
+    <a href="#work">Realisierte Projekte</a>
+    <a href="#approach">Ansatz</a>
+    <a href="contact.html">Kontakt</a>
+    <span class="langs"><a href="/" lang="en" hreflang="en">EN</a><a href="/it/" lang="it" hreflang="it">IT</a><a href="/de/" lang="de" hreflang="de" aria-current="page">DE</a></span>
+  </nav>
+</header>
+<main>
+
+<!-- ================= HERO ================= -->
+<div class="hero" id="top">
+  <picture><source type="image/webp" srcset="/assets/alma-01-xs.webp 800w, /assets/alma-01-sm.webp 1440w, /assets/alma-01-lg.webp 2560w" sizes="100vw"><img src="/assets/alma-01.jpg" alt="Steinbastion des Agriturismo Alma mit der Rocca Maggiore von Assisi oberhalb des Olivenhains — Alessandro Buffi Architekt" width="1920" height="1280" decoding="async" fetchpriority="high"></picture>
+  <div class="hero-inner">
+    <div class="hero-eyebrow">Alessandro Buffi Architekt — Perugia · Florenz</div>
+    <h1>Architecture<br>of Position</h1>
+    <p>Bevor wir eine Mauer zeichnen, studieren wir, wo sie sich am besten in das Gelände einfügt. Landgüter, Weingüter und ländliche Hotellerie in Umbrien und der Toskana.</p>
+  </div>
+</div>
+
+<!-- ================= INTRO ================= -->
+<section id="intro">
+  <div class="grid">
+    <div class="rv">
+      <span class="kicker">Das Büro</span>
+      <h2>Ein italienisches Architekturbüro für alle, die einen Hügel in <span class="up">Umbrien</span> oder der <span class="up">Toskana</span> auswählen und dort ein Leben aufbauen wollen.</h2>
+      <p>Von Perugia und Florenz aus plant das Büro die Umgestaltung von Anwesen mit Land – historische Landgüter, Weingüter, Bauernhäuser, die zu Orten der Gastlichkeit werden – für internationale und italienische Bauherren. Alles aus einer Hand, vom ersten Gang über das Grundstück bis zum fertigen Werk.</p>
+    </div>
+    <aside class="rv">
+      <div><b>Bereiche</b>Landgüter &amp; historische Villen · Weingüter &amp; landwirtschaftliche Flächen · Ländliche Hotellerie</div>
+      <div><b>Regionen</b>Umbrien, Toskana und Mittelitalien</div>
+      <div><b>Methode</b>Jeder Auftrag beginnt mit einer Standort- und Machbarkeitsstudie – bevor etwas versprochen wird</div>
+      <div><b>Sprachen</b>Deutsch · Englisch · Italienisch</div>
+    </aside>
+  </div>
+</section>
+
+<!-- ================= BUILT WORK ================= -->
+<section id="work">
+  <div class="head rv">
+    <span class="kicker" style="text-align:center">Realisiertes Projekt — Assisi, 2026 — Preis IN/Arch 2026</span>
+    <h2>Landgasthof mit Blick auf Assisi</h2>
+    <div class="sub">Agriturismo Alma — Gastgewerbe &amp; landwirtschaftliche Produktion, Bauvolumen 2,5 Mio. €</div>
+    <p class="lede">Am landwirtschaftlichen Rand von Assisi wurde ein Landgut in eine fortlaufende Folge bewohnter, bewirtschafteter und offener Räume verwandelt. Geneigte Mauern aus örtlichem Stein machen die Stützkonstruktion zum bewohnten Raum; der Besuch entfaltet sich als Aufstieg, bis Rocca und Basilika in einem einzigen Bild zusammenfinden.</p>
+  </div>
+
+  <figure class="full rv">
+    <picture><source type="image/webp" srcset="/assets/alma-02-sm.webp 1200w, /assets/alma-02-lg.webp 2000w" sizes="100vw"><img src="/assets/alma-02.jpg" alt="Agriturismo Alma, Assisi — Steinmauern und gläserne Baukörper, die aus dem Hang hervortreten" width="1600" height="1067" decoding="async" loading="lazy"></picture>
+    <figcaption>Baukörper aus Stein und Glas wachsen aus dem Gelände</figcaption>
+  </figure>
+
+  <div class="duo">
+    <figure class="rv">
+      <picture><source type="image/webp" srcset="/assets/alma-03-sm.webp 1200w, /assets/alma-03-lg.webp 2000w" sizes="100vw"><img src="/assets/alma-03.jpg" alt="Verglaster Saal des Agriturismo Alma, der sich zum Olivenhain öffnet" width="1600" height="1067" decoding="async" loading="lazy"></picture>
+      <figcaption>Innenraum und Gelände in Kontinuität</figcaption>
+    </figure>
+    <figure class="off rv">
+      <picture><source type="image/webp" srcset="/assets/alma-04-sm.webp 1200w, /assets/alma-04-lg.webp 2000w" sizes="100vw"><img src="/assets/alma-04.jpg" alt="Speisesaal des Agriturismo Alma, der den Hügel von Assisi umrahmt" width="1600" height="1067" decoding="async" loading="lazy"></picture>
+      <figcaption>Der Saal rahmt die Landschaft wie ein Fresko</figcaption>
+    </figure>
+  </div>
+
+  <div class="datastrip rv">
+    <div><b>Ort</b>Assisi, Umbrien</div>
+    <div><b>Programm</b>Gastgewerbe &amp; landwirtschaftliche Produktion</div>
+    <div><b>Bauherr</b>Melrose Società Agricola</div>
+    <div><b>Bausumme</b>2,5 Mio. €</div>
+    <div><b>Bauzeit</b>2023 – 2026</div>
+    <div><b>Entwurf</b>Alessandro Buffi mit Matteo Sannipoli</div>
+  </div>
+</section>
+
+<!-- ================= APPROACH + SERVICES ================= -->
+<section id="approach">
+  <div class="manifesto rv" style="padding-top:110px">
+    <span class="kicker">Ansatz — Architecture of Position</span>
+    <h2>Gegenüber der historischen Präsenz von Assisi sucht die Architektur keine Zentralität. <i>Sie sucht Position.</i></h2>
+    <p>Jeder Ort in Mittelitalien gehört bereits zu einer Komposition – ein Grat mit Olivenbäumen, das Abfallen eines Tals, die Silhouette einer Basilika. Architecture of Position heißt, jede Mauer, jede Öffnung und jede Terrasse an Topografie, Landschaft und historischer Stadt zu messen. Das ist die Methode hinter Alma – und hinter jedem Auftrag, den das Büro annimmt.</p>
+  </div>
+  <div id="services-band">
+    <div class="bandhead rv">
+      <h2>Vom Land zum Vermächtnis</h2>
+      <span>Dieselbe Methode, in sechs Leistungen</span>
+    </div>
+    <div class="svc">
+      <article class="rv">
+        <h3><span>01</span>Standort &amp; Ankauf</h3>
+        <p>Machbarkeit und planerische Due Diligence vor dem Kauf: Auflagen, Kubaturen, das tatsächliche Potenzial des Anwesens.</p>
+      </article>
+      <article class="rv">
+        <h3><span>02</span>Architektur</h3>
+        <p>Masterplan, Restaurierung und Neubau, gemessen an Topografie und Landschaft.</p>
+      </article>
+      <article class="rv">
+        <h3><span>03</span>Genehmigungen &amp; Denkmalschutz</h3>
+        <p>Baugenehmigungen, landschafts- und denkmalrechtliche Auflagen – das italienische Verfahren, für Sie geführt.</p>
+      </article>
+      <article class="rv">
+        <h3><span>04</span>Bauausführung</h3>
+        <p>Bauleitung mit bewährten örtlichen Baufirmen und Handwerkern, von den Erdarbeiten bis zur Übergabe.</p>
+      </article>
+      <article class="rv">
+        <h3><span>05</span>Innenräume &amp; Landschaft</h3>
+        <p>Kontinuität von der Architektur bis zu Innenräumen, Weinbergen, Olivenhainen, Pools und Gärten.</p>
+      </article>
+      <article class="rv">
+        <h3><span>06</span>Langfristige Betreuung</h3>
+        <p>Monitoring, Wartungsplanung und weitere Phasen, während das Anwesen mit Jahreszeiten und Nutzung wächst.</p>
+      </article>
+    </div>
+    <p class="svc-note rv">Jeder Auftrag beginnt mit einer Standort- und Machbarkeitsstudie. Wir arbeiten auf Englisch, Deutsch und Italienisch, in ganz Umbrien und der Toskana.</p>
+  </div>
+</section>
+
+<!-- ================= SEQUENCE ================= -->
+<section id="sequence" style="padding:90px 0">
+  <div class="gallery-wrap rv">
+    <div class="gallery-head">
+      <span class="kicker" style="margin-bottom:0">Alma — die ganze Abfolge</span>
+      <span class="gscroll">Ziehen oder gleiten lassen →</span>
+    </div>
+    <div class="gallery" id="gallery">
+      <figure><picture><source type="image/webp" srcset="/assets/alma-05-sm.webp 800w, /assets/alma-05-lg.webp 1400w" sizes="(max-width:800px) 85vw, 45vw"><img src="/assets/alma-05.jpg" alt="Travertinterrasse und Pool gegenüber der Rocca Maggiore von Assisi" width="1100" height="619" decoding="async" loading="lazy"></picture><figcaption>Die Poolterrasse mit Blick auf die Rocca</figcaption></figure>
+      <figure><picture><source type="image/webp" srcset="/assets/alma-06-sm.webp 760w, /assets/alma-06-lg.webp 1200w" sizes="(max-width:800px) 85vw, 45vw"><img src="/assets/alma-06.jpg" alt="Travertintreppe, die zwischen Mauern aufsteigt" width="1000" height="1339" decoding="async" loading="lazy"></picture><figcaption>Der Aufstieg</figcaption></figure>
+      <figure><picture><source type="image/webp" srcset="/assets/alma-07-sm.webp 800w, /assets/alma-07-lg.webp 1400w" sizes="(max-width:800px) 85vw, 45vw"><img src="/assets/alma-07.jpg" alt="Schräg eingeschnittenes Fenster, das die Rocca Maggiore von Assisi umrahmt" width="1100" height="730" decoding="async" loading="lazy"></picture><figcaption>Öffnungen, auf den Blick zugeschnitten</figcaption></figure>
+      <figure><picture><source type="image/webp" srcset="/assets/alma-08-sm.webp 800w, /assets/alma-08-lg.webp 1400w" sizes="(max-width:800px) 85vw, 45vw"><img src="/assets/alma-08.jpg" alt="Das Agriturismo Alma in der Dämmerung, der beleuchtete unterirdische Saal" width="1100" height="821" decoding="async" loading="lazy"></picture><figcaption>Der unterirdische Saal in der Dämmerung</figcaption></figure>
+      <figure><picture><source type="image/webp" srcset="/assets/alma-09-sm.webp 800w, /assets/alma-09-lg.webp 1400w" sizes="(max-width:800px) 85vw, 45vw"><img src="/assets/alma-09.jpg" alt="Der neue Weinberg steigt zu den Gebäuden hinauf" width="1100" height="824" decoding="async" loading="lazy"></picture><figcaption>Weinberge zum Grat hin</figcaption></figure>
+      <figure><picture><source type="image/webp" srcset="/assets/alma-10-sm.webp 800w, /assets/alma-10-lg.webp 1400w" sizes="(max-width:800px) 85vw, 45vw"><img src="/assets/alma-10.jpg" alt="Der Pavillon über dem neuen Weinberg" width="1100" height="619" decoding="async" loading="lazy"></picture><figcaption>Der Pavillon über den Reben</figcaption></figure>
+      <figure><picture><source type="image/webp" srcset="/assets/alma-11-sm.webp 800w, /assets/alma-11-lg.webp 1400w" sizes="(max-width:800px) 85vw, 45vw"><img src="/assets/alma-11.jpg" alt="Geneigte Steinmauer mit schrägen Öffnungen unterhalb der Rocca Maggiore" width="1100" height="734" decoding="async" loading="lazy"></picture><figcaption>Die bewohnte Stützmauer</figcaption></figure>
+      <figure><picture><source type="image/webp" srcset="/assets/alma-12-sm.webp 800w, /assets/alma-12-lg.webp 1400w" sizes="(max-width:800px) 85vw, 45vw"><img src="/assets/alma-12.jpg" alt="Blick auf die Basilika des heiligen Franziskus von der Loggia" width="1100" height="733" decoding="async" loading="lazy"></picture><figcaption>Die Basilika von der Loggia aus</figcaption></figure>
+      <figure><picture><source type="image/webp" srcset="/assets/alma-13-sm.webp 800w, /assets/alma-13-lg.webp 1400w" sizes="(max-width:800px) 85vw, 45vw"><img src="/assets/alma-13.jpg" alt="Überdachte Loggia bei Sonnenuntergang" width="1100" height="824" decoding="async" loading="lazy"></picture><figcaption>Die Loggia in der Dämmerung</figcaption></figure>
+      <figure><picture><source type="image/webp" srcset="/assets/alma-14-sm.webp 800w, /assets/alma-14-lg.webp 1400w" sizes="(max-width:800px) 85vw, 45vw"><img src="/assets/alma-14.jpg" alt="Die Stahlklinge des Vordachs vor dem Himmel" width="1100" height="825" decoding="async" loading="lazy"></picture><figcaption>Stahl vor dem Himmel</figcaption></figure>
+      <figure><picture><source type="image/webp" srcset="/assets/alma-15-sm.webp 800w, /assets/alma-15-lg.webp 1400w" sizes="(max-width:800px) 85vw, 45vw"><img src="/assets/alma-15.jpg" alt="Das Landgut auf seinem Grat gegenüber Assisi" width="1100" height="619" decoding="async" loading="lazy"></picture><figcaption>Das Landgut auf dem Grat</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT BAND ================= -->
+<section id="contact-band">
+  <div class="bg"><picture><source type="image/webp" srcset="/assets/alma-16-sm.webp 1200w, /assets/alma-16-lg.webp 2000w" sizes="100vw"><img src="/assets/alma-16.jpg" alt="Weinberge und Poolterrasse des Agriturismo Alma im Morgengrauen, dahinter Assisi im Nebel" width="1600" height="900" decoding="async" loading="lazy"></picture></div>
+  <div class="inner">
+    <h2 class="rv">Am Anfang steht das Land</h2>
+    <p class="rv">Sie denken an ein Landgut, ein Weingut oder ein Hotelprojekt in Umbrien oder der Toskana? Erzählen Sie uns vom Ort und Ihren Vorstellungen – Sie erhalten innerhalb von zwei Werktagen eine persönliche Antwort.</p>
+    <div class="rv"><a class="cta" href="contact.html">Schreiben Sie uns</a></div>
+    <div class="cmail rv"><a href="mailto:info@alessandrobuffi.com">info@alessandrobuffi.com</a></div>
+    <div class="cwordmark wordmark rv"><span class="bk l">[</span>Alessandro Buffi<span class="bk r">]</span><span class="tagline">Architektur &amp; Design</span></div>
+  </div>
+  </main>
+<footer>
+    <div class="inner">
+      <span>© 2026 Alessandro Buffi Architekt · USt-IdNr. IT 03749400549</span>
+      <span>Architecture of Position — Umbrien · Toskana</span>
+      <span><a href="/privacy.html" style="border-bottom:1px solid currentColor">Datenschutz</a></span>
+    </div>
+  </footer>
+</section>
+
+<script>
+const hd=document.getElementById('hd');
+addEventListener('scroll',()=>{hd.classList.toggle('scrolled',scrollY>60)},{passive:true});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+const nav=document.getElementById('nav'),burger=document.getElementById('burger');
+burger.addEventListener('click',()=>{const o=nav.classList.toggle('open');burger.textContent=o?"Schließen":"Menü";burger.setAttribute('aria-expanded',o)});
+document.querySelectorAll('.langs a').forEach(a=>a.addEventListener('click',()=>{try{localStorage.setItem('ab-lang',a.lang)}catch(e){}}));
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');burger.textContent="Menü";burger.setAttribute('aria-expanded','false')}));
+
+// gallery drift
+const g=document.getElementById('gallery');
+if(g && !matchMedia('(prefers-reduced-motion: reduce)').matches){
+  g.innerHTML+=g.innerHTML; // duplicate for seamless loop
+  let paused=false,half=0;
+  const setHalf=()=>{half=g.scrollWidth/2};
+  addEventListener('load',setHalf); setTimeout(setHalf,1500);
+  ['pointerenter','touchstart','pointerdown'].forEach(e=>g.addEventListener(e,()=>paused=true,{passive:true}));
+  g.addEventListener('pointerleave',()=>paused=false);
+  let resume;g.addEventListener('touchend',()=>{clearTimeout(resume);resume=setTimeout(()=>paused=false,3000)},{passive:true});
+  (function drift(){
+    if(!paused && half>0){g.scrollLeft+=0.5;if(g.scrollLeft>=half)g.scrollLeft-=half;}
+    requestAnimationFrame(drift);
+  })();
+}
+</script>
+</body>
+</html>

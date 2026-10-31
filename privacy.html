@@ -104,6 +104,9 @@ footer .inner{max-width:var(--max);margin:0 auto;padding:26px 4vw;display:flex;j
 
 /* mobile */
 @media(max-width:880px){
+  /* il blur renderebbe l'header il riferimento di nav.open (position:fixed): il menu resterebbe alto come l'header */
+  header.scrolled{backdrop-filter:none}
+  .burger[aria-expanded="true"]{color:var(--paper)}
   nav{display:none}
   nav.open{display:flex;position:fixed;inset:0;background:var(--steel);color:var(--paper);flex-direction:column;justify-content:center;align-items:center;gap:34px}
   nav.open a{font-size:.85rem}
